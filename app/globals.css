@@ -37,3 +37,7 @@ body {
 .swiper-button-prev {
   padding: 10px;
 }
+
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+}

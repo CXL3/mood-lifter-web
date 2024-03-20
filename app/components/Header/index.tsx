@@ -2,9 +2,12 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className="z-10 w-full bg-black shadow-lg">
+    <header className="absolute top-0 left-0 w-full bg-transparent z-10 flex1 p-4">
       <div className="max-w-6xl mx-auto flex justify-between items-center py-6 px-4">
-        <h1 className="font-sans text-3xl font-bold text-white">
+        <h1
+          className="font-sans text-3xl font-bold text-white"
+          style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+        >
           <Link href="/" className="hover:text-yellow-200 transition-colors">
             Lifting my mood now
           </Link>
@@ -15,24 +18,27 @@ function Header() {
               <Link
                 href="/about"
                 className="text-white hover:text-yellow-200 transition-colors"
+                style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
               >
                 About
               </Link>
             </li>
             <li>
               <Link
-                href="/services"
+                href="/contact"
                 className="text-white hover:text-yellow-200 transition-colors"
+                style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
               >
-                Services
+                Contact
               </Link>
             </li>
             <li>
               <Link
-                href="/contact"
+                href="/login"
                 className="text-white hover:text-yellow-200 transition-colors"
+                style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
               >
-                Contact
+                Login
               </Link>
             </li>
           </ul>

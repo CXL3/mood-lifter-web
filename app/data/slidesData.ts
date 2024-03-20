@@ -1,0 +1,67 @@
+const slidesData = [
+  {
+    text: "Do a breathing exercise",
+    color: "bg-pink-300/80",
+    backgroundImage: "/images/2.svg",
+    link: "/breathing-exercises",
+    includeButton: true,
+  },
+  {
+    text: "Gratitude List",
+    color: "bg-blue-200/80",
+    backgroundImage: "/images/2.svg",
+    link: "/gratitude-list",
+    includeButton: true,
+  },
+  {
+    text: "Think general mood words",
+    color: "bg-green-200/80",
+    backgroundImage: "/images/2.svg",
+    link: "/mood-words",
+    includeButton: true,
+  },
+  {
+    text: "Listen to your favorite music",
+    color: "bg-purple-300/80",
+    backgroundImage: "/images/2.svg",
+    link: "/favorite-music",
+    includeButton: true,
+  },
+  {
+    text: "Write a journal",
+    color: "bg-yellow-200/80",
+    backgroundImage: "/images/2.svg",
+    link: "/write-journal",
+    includeButton: true,
+  },
+  {
+    text: "Tapping game",
+    color: "bg-orange-200/80",
+    backgroundImage: "/images/2.svg",
+    link: "/tapping-game",
+    includeButton: true,
+  },
+  {
+    text: "Call a friend",
+    color: "bg-teal-200/80",
+    backgroundImage: "/images/2.svg",
+    link: "/call-friend",
+    includeButton: true,
+  },
+  {
+    text: "Take a shower",
+    color: "bg-indigo-200/80",
+    backgroundImage: "/images/2.svg",
+    link: "/take-shower",
+    includeButton: true,
+  },
+  {
+    text: "Take a nap",
+    color: "bg-rose-200/80",
+    backgroundImage: "/images/nap.svg",
+    link: "/take-nap",
+    includeButton: true,
+  },
+];
+
+export default slidesData;
