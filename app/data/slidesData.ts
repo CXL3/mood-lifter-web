@@ -24,7 +24,7 @@ const slidesData = [
     text: "Listen to your favorite music",
     color: "bg-purple-300/80",
     backgroundImage: "/images/2.svg",
-    link: "/feelingbetternow/favoritemusic",
+    link: "/feelingbetternow/listentomusic",
     includeButton: true,
   },
   {
@@ -45,7 +45,7 @@ const slidesData = [
     text: "Call a friend",
     color: "bg-teal-200/80",
     backgroundImage: "/images/2.svg",
-    link: "/feelingbetternow/callfriend",
+    link: "/feelingbetternow/callafriend",
     includeButton: true,
   },
   {
