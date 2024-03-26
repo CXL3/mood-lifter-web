@@ -14,10 +14,10 @@ const slidesData = [
     includeButton: true,
   },
   {
-    text: "Think general mood words",
+    text: "Affirmation Meditation",
     color: "bg-green-200/80",
     backgroundImage: "/images/2.svg",
-    link: "/feelingbetternow/moodwords",
+    link: "/feelingbetternow/affirmation",
     includeButton: true,
   },
   {

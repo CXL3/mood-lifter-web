@@ -1,6 +1,4 @@
-function TakeNap(){
-    return (
-        <div>take nap</div>
-    )
+function TakeNap() {
+  return <div>take nap</div>;
 }
 export default TakeNap;

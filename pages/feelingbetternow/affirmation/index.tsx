@@ -2,20 +2,30 @@ import Header from "@/app/components/Header";
 import Head from "next/head";
 import "@/app/globals.css";
 
-function BreathingExercises() {
+function MoodWords() {
+  // Assuming these IDs link to meditation or positive affirmation videos that are compliant with sharing policies
   const videos = [
-    { id: "hJbRpHZr_d0", title: "Calm Breathing Exercise" },
-    { id: "m8JjuyRIxOg", title: "Deep Breathing for Anxiety Relief" },
-    { id: "sJ04nsiz_M0", title: "Quick Mood Lifting Breathing" },
+    {
+      id: "YeM2yhULSVM",
+      title: "Spoken Affirmations For Panic Attack, Anxiety",
+    },
+    {
+      id: "0Cht6vCJIw4",
+      title: "Affirmations For Morning Anxiety, Chronic Stress",
+    },
+    {
+      id: "SWESKYhETmQ",
+      title: "Daily Affirmations for Anxiety, Chronic Stress, Panic Attacks",
+    },
   ];
 
   return (
     <>
       <Head>
-        <title>Breathing Exercise</title>
+        <title>Affirnation Meditation</title>
         <meta
           name="description"
-          content="Breathing exercises for mood lift and anxiety relief"
+          content="Explore meditations and affirmations to enhance positivity and wellbeing."
         />
       </Head>
       <main className="bg-gradient-to-br from-blue-400 to-cyan-300 min-h-screen flex flex-col items-center justify-center p-5">
@@ -25,13 +35,13 @@ function BreathingExercises() {
             className="text-4xl md:text-5xl font-extrabold text-yellow-300 pb-4"
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
           >
-            Breathing Exercises
+            Affirnation Meditation
           </h1>
           <p className="text-lg md:text-xl font-medium text-white mb-6 max-w-2xl mx-auto">
-            Select a video to start your breathing exercise. These exercises can
-            help lift your mood and relieve anxiety.
+            Discover meditations and affirmations designed to improve your day
+            and bring positivity into your life.
           </p>
-          <div className="grid gap-5 w-full max-w-4xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-5 w-full max-w-4xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-8">
             {videos.map((video) => (
               <div
                 key={video.id}
@@ -55,4 +65,4 @@ function BreathingExercises() {
   );
 }
 
-export default BreathingExercises;
+export default MoodWords;

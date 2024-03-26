@@ -1,6 +1,5 @@
 function About() {
-    return <div>ehdfdfdy</div>;
-  }
-  
+  return <div>ehdfdfdy</div>;
+}
+
 export default About;
-  
