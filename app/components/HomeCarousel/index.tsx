@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
 import HomeSlide from "../HomeSlide";
 import slidesData from "../../data/slidesData";
+import "@/app/globals.css";
 
 export default function HomeCarousel() {
   return (

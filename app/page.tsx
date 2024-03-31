@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import HomeCarousel from "./components/HomeCarousel";
+import "@/app/globals.css";
 
 export default function Home() {
   return (
