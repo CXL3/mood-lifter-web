@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import "@/app/globals.css";
 
@@ -16,6 +17,11 @@ export default function HomeSlide({
   link = "/",
   includeButton,
 }: HomeSlideProps) {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
   const style = {
     backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
     backgroundSize: "cover",
@@ -23,6 +29,8 @@ export default function HomeSlide({
     backgroundRepeat: "no-repeat",
     height: "120vh",
     width: "100%",
+    transition: "opacity 1s ease-in-out", // Smooth transition for the opacity
+    opacity: loaded ? 1 : 0, // Start from 0 opacity, fade in to 1
   };
 
   return (
