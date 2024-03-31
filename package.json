@@ -11,6 +11,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,html,json}\""
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^4.41.3",
     "next": "13.4.12",
     "next-auth": "^4.24.7",
     "react": "^18",
