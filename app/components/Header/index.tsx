@@ -34,7 +34,7 @@ function Header() {
             </button>
           </div>
           <h1
-            className="font-sans text-3xl font-bold text-white"
+            className="font-sans text-xl md:text-3xl font-bold text-white"
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
           >
             <Link href="/" className="hover:text-yellow-200 transition-colors">
@@ -47,7 +47,7 @@ function Header() {
             <li>
               <Link
                 href="/about"
-                className="text-white hover:text-yellow-200 transition-colors"
+                className="text-white font-bold hover:text-yellow-200 transition-colors"
                 style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
               >
                 About
@@ -56,7 +56,7 @@ function Header() {
             <li>
               <Link
                 href="/contact"
-                className="text-white hover:text-yellow-200 transition-colors"
+                className="text-white font-bold hover:text-yellow-200 transition-colors"
                 style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
               >
                 Contact
@@ -65,7 +65,7 @@ function Header() {
             <li>
               <Link
                 href="/login"
-                className="text-white hover:text-yellow-200 transition-colors"
+                className="text-white font-bold hover:text-yellow-200 transition-colors"
                 style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
               >
                 Login

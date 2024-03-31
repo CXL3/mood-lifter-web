@@ -40,7 +40,7 @@ function JournalPage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gradient-to-br from-blue-400 to-cyan-300 p-5">
       <Header />
-      <div className="mt-8 w-full max-w-xl">
+      <div className="mt-24 w-full max-w-xl">
         <h1
           className="text-4xl md:text-5xl font-extrabold text-yellow-300 text-center pb-16"
           style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}

@@ -34,7 +34,7 @@ function GratitudeList() {
     <div>
       <Header />
       <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
-        <div className="w-full max-w-md p-8 bg-white/90 backdrop-blur-lg rounded-lg shadow-lg">
+        <div className="w-full max-w-md p-8 bg-white/90 backdrop-blur-lg rounded-lg shadow-lg mt-24">
           <h2 className="text-2xl font-bold mb-4 text-center">
             Gratitude Notebook
           </h2>

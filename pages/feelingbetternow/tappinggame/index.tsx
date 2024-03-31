@@ -29,7 +29,7 @@ function TappingGame() {
       </Head>
       <main className="bg-gradient-to-br from-blue-400 to-cyan-300 min-h-screen flex flex-col items-center justify-center p-5">
         <Header />
-        <div className="text-center flex flex-col items-center justify-center min-h-screen w-full pt-24 md:pt-0">
+        <div className="text-center flex flex-col items-center justify-center min-h-screen w-full pt-24">
           <h1
             className="text-4xl md:text-5xl font-extrabold text-yellow-300 pb-4"
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}

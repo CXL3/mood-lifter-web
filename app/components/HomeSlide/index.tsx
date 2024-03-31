@@ -18,15 +18,15 @@ export default function HomeSlide({
   const style = {
     backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
     backgroundSize: "cover",
-    backgroundPosition: "center",
+    backgroundPosition: "bottom",
     backgroundRepeat: "no-repeat",
-    height: "100vh",
+    height: "120vh",
     width: "100%",
   };
 
   return (
     <div
-      className={`${color} w-full h-screen flex flex-col items-center justify-center px-5 space-y-4`}
+      className={`${color} w-full h-screen flex flex-col items-center justify-center px-5 pt-12 space-y-4`}
       style={style}
     >
       <p

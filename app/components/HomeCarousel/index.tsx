@@ -16,7 +16,7 @@ export default function HomeCarousel() {
       loop={true}
       navigation
       pagination={{ clickable: true }}
-      speed={1800}
+      speed={1500}
     >
       {slidesData.map((slide, index) => (
         <SwiperSlide key={index}>
