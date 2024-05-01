@@ -35,7 +35,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 To do:
  Plan:
- 1. reuse component
+ 1. reuse component (need heading rewrite)
  2. add more test
  3. start backend
  4. add account login (google and facebook)
@@ -57,6 +57,3 @@ Mobile plan:
 1. react native, build the pages
 2. connect to servers
 
-work on:
-1. teal
-2. what is gig website
