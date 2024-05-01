@@ -32,3 +32,31 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 # mood-lifter-web
+
+To do:
+ Plan:
+ 1. reuse component
+ 2. add more test
+ 3. start backend
+ 4. add account login (google and facebook)
+ 5. save grattitude list/diary
+ 6. add delete function
+ 7. add local save function.
+ 8. add general mood section
+ 9. add memes/cute animals
+ 10. save grattitude and diary on the server
+
+
+11. add ads
+12. add payment option
+13. add friends section
+14. add money/career option
+15.
+
+Mobile plan:
+1. react native, build the pages
+2. connect to servers
+
+work on:
+1. teal
+2. what is gig website

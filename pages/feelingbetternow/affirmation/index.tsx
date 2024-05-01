@@ -1,10 +1,11 @@
 import Header from "@/app/components/Header";
 import Head from "next/head";
 import "@/app/globals.css";
+import VideoGid from "@/app/components/VideoGrid";
+import { VideoGridTypes } from "@/app/components/VideoGrid/types";
 
 function MoodWords() {
-  // Assuming these IDs link to meditation or positive affirmation videos that are compliant with sharing policies
-  const videos = [
+  const videos: VideoGridTypes[] = [
     {
       id: "YeM2yhULSVM",
       title: "Spoken Affirmations For Panic Attack, Anxiety",
@@ -41,24 +42,7 @@ function MoodWords() {
             Discover meditations and affirmations designed to improve your day
             and bring positivity into your life.
           </p>
-          <div className="grid gap-5 w-full max-w-4xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-8">
-            {videos.map((video) => (
-              <div
-                key={video.id}
-                className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-4 flex flex-col items-center"
-              >
-                <h2 className="text-lg font-semibold mb-2">{video.title}</h2>
-                <iframe
-                  className="w-full rounded-lg aspect-video"
-                  src={`https://www.youtube.com/embed/${video.id}`}
-                  title={video.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            ))}
-          </div>
+          <VideoGid videos={videos} />
         </div>
       </main>
     </>

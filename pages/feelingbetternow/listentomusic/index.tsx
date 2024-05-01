@@ -2,8 +2,15 @@ import React, { useState } from "react";
 import Header from "@/app/components/Header";
 import Head from "next/head";
 import "@/app/globals.css";
+import VideoGrid from "@/app/components/VideoGrid";
+import { VideoGridTypes } from "@/app/components/VideoGrid/types";
 
-const playlists = [
+export interface Playlist {
+  name: string;
+  songs: VideoGridTypes[];
+}
+
+const playlists: Playlist[] = [
   {
     name: "Mood Lifters",
     songs: [
@@ -42,7 +49,9 @@ const playlists = [
 ];
 
 function MusicPlaylists() {
-  const [currentPlaylist, setCurrentPlaylist] = useState(playlists[0]);
+  const [currentPlaylist, setCurrentPlaylist] = useState<Playlist>(
+    playlists[0],
+  );
 
   return (
     <>
@@ -76,24 +85,7 @@ function MusicPlaylists() {
               </button>
             ))}
           </div>
-          <div className="grid gap-5 w-full max-w-4xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-            {currentPlaylist.songs.map((song) => (
-              <div
-                key={song.id}
-                className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-4 flex flex-col items-center"
-              >
-                <h2 className="text-lg font-semibold mb-2">{song.title}</h2>
-                <iframe
-                  className="w-full rounded-lg aspect-video"
-                  src={`https://www.youtube.com/embed/${song.id}`}
-                  title={song.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            ))}
-          </div>
+          <VideoGrid videos={currentPlaylist.songs} />
         </div>
       </main>
     </>
